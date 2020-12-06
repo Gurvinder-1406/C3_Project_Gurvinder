@@ -2,6 +2,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import java.time.LocalTime;
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
@@ -73,5 +75,32 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //>>>>>>>>>>>>>>>>>>>>>>>>>CALCULATE PRICE FOR THE SELECTED ITEMS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    @Test
+    public void total_price_of_selected_items_should_match_the_sum_of_individual_item_price() {
+
+        addItemsToMenu();
+
+        ArrayList<String> selectedItems = new ArrayList<>();
+        selectedItems.add("Sweet corn soup");
+        selectedItems.add("Vegetable lasagne");
+
+        int totalPrice = restaurant.calculateTotalPriceOfSelectedItems(selectedItems);
+        assertEquals(388, totalPrice); // 119 + 269 = 388
+    }
+
+    @Test
+    public void total_returned_value_should_be_0_when_no_item_is_selected() {
+
+        addItemsToMenu();
+
+        int totalPrice = restaurant.calculateTotalPriceOfSelectedItems(null);
+        assertEquals(0, totalPrice);
+        totalPrice = restaurant.calculateTotalPriceOfSelectedItems(new ArrayList<>());
+        assertEquals(0, totalPrice);
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<CALCULATE PRICE FOR THE SELECTED ITEMS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }

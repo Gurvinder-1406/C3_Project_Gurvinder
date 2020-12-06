@@ -12,7 +12,6 @@ public class RestaurantService {
                 return restaurant;
             }
         }
-//        return null;
         throw new restaurantNotFoundException(restaurantName);
     }
 

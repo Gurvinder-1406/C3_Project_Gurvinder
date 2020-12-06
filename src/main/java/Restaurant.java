@@ -19,7 +19,6 @@ public class Restaurant {
     public boolean isRestaurantOpen() {
 
         if (getCurrentTime().isBefore(openingTime)  || getCurrentTime().isAfter(closingTime)) {
-            System.out.println("Restaurant is Closed");
             return false;
         }
         return true;
