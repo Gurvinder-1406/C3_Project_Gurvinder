@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de730f0-95d5-437f-bbb1-a611bd734b51" name="Default Changelist" comment="">
+    <list default="true" id="6de730f0-95d5-437f-bbb1-a611bd734b51" name="Default Changelist" comment="&quot;Part 3: Failing test case&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Restaurant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestaurantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestaurantService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RestaurantTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RestaurantTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +32,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="JUnit.RestaurantTest.total_returned_value_should_be_0_when_no_item_is_selected">
+  <component name="RunManager" selected="JUnit.RestaurantTest">
     <configuration name="RestaurantServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-demo" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,10 +83,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RestaurantTest.total_returned_value_should_be_0_when_no_item_is_selected" />
-        <item itemvalue="JUnit.RestaurantTest.total_price_of_selected_items_should_match_the_sum_of_individual_item_price" />
         <item itemvalue="JUnit.RestaurantTest" />
         <item itemvalue="JUnit.RestaurantServiceTest" />
+        <item itemvalue="JUnit.RestaurantTest.total_returned_value_should_be_0_when_no_item_is_selected" />
+        <item itemvalue="JUnit.RestaurantTest.total_price_of_selected_items_should_match_the_sum_of_individual_item_price" />
         <item itemvalue="JUnit.RestaurantTest.is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time" />
       </list>
     </recent_temporary>
@@ -106,6 +100,14 @@
       <option name="presentableId" value="Default" />
       <updated>1607275475497</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Part 3: Failing test case&quot;">
+      <created>1607281734177</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607281734177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,10 +126,12 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="&quot;Part 3: Failing test case&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Part 3: Failing test case&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/library_demo$RestaurantTest_total_price_of_selected_items_should_match_the_sum_of_individual_item_price.ic" NAME="RestaurantTest.total_price_of_selected_items_should_match_the_sum_of_individual_item_price Coverage Results" MODIFIED="1607280711758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/library_demo$RestaurantServiceTest.ic" NAME="RestaurantServiceTest Coverage Results" MODIFIED="1607280573732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/library_demo$RestaurantTest.ic" NAME="RestaurantTest Coverage Results" MODIFIED="1607280582763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/library_demo$RestaurantServiceTest.ic" NAME="RestaurantServiceTest Coverage Results" MODIFIED="1607281839912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/library_demo$RestaurantTest.ic" NAME="RestaurantTest Coverage Results" MODIFIED="1607281854218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -24,6 +24,21 @@ public class Restaurant {
         return true;
     }
 
+    public int calculateTotalPriceOfSelectedItems(ArrayList<String> itemNames) {
+
+        int totalPrice = 0;
+
+        if (itemNames == null || itemNames.size() == 0)
+            return totalPrice;
+
+        for(String itemName: itemNames) {
+            Item item = findItemByName(itemName);
+            totalPrice = totalPrice + item.getPrice();
+        }
+
+        return  totalPrice;
+    }
+
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
